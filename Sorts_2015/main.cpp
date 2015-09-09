@@ -6,10 +6,14 @@
 //  Copyright (c) 2015 Alexander Arturo Baylon Ibanez. All rights reserved.
 //
 
-#include <iostream>
+#include "sorts.h"
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    auto random_data = crear_vector_random(1000);
+    
+    for (int i=0; i<1000; i++) {
+        cout << "(" << i << ")" << " " << random_data[i] << endl;
+    }
+   
     return 0;
 }
